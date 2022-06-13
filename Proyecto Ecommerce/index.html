@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 
 </head>
@@ -18,7 +20,7 @@
     <header class="nombre-sitio">
         <h1>Tienda <span>Muebles</span></h1>
     </header>
-    
+
     <div class="contenedor-principal">
         <nav class="nav-principal contenedor">
             <a class="enlace" href="index.html">Inicio</a>
@@ -33,7 +35,7 @@
 
     <section class="contenedor categorias">
 
-        <h2>Categorías de <span>Producto</span></h2>
+        <h2 class="text-center">Categorías de Producto</h2>
         <div class="listado-categorias">
             <div class="categoria">
                 <img src="img/categoria1.jpg" alt="Imagen Categoría" />
@@ -52,111 +54,115 @@
     </section>
 
     <section class="sobre-nosotros">
-        <div class="contenedor">
-            <h2>Sobre Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique natus consequatur recusandae
-                quas quam velit dignissimos vitae. Quam optio vero, placeat nihil adipisci esse! Molestiae impedit
-                dignissimos quibusdam libero.</p>
+        <div class="contenedor sobre-nosotros-flex">
+            <div class="texto-nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique natus consequatur
+                    recusandae
+                    quas quam velit dignissimos vitae. Quam optio vero, placeat nihil adipisci esse! Molestiae impedit
+                    dignissimos quibusdam libero.</p>
+            </div>
         </div>
     </section>
 
 
-    <main>
+    <main class="contenido-principal contenedor">
         <!-- después de colocar todos los section hay que buscar el section principal y cambiarlo a main, es la parte más importante de la página -->
         <!-- Si el primer hijo es un heading lo más probable es que sea un section -->
-        <h2>Nuestros Productos</h2>
-        <ul>
-            <div>
+        <h2 class="text-center">Nuestros Productos</h2>
+        <div class="listado-productos">
+            <div class="producto">
                 <img src="img/producto1.jpg" alt="Imagen Producto">
-                <div>
+                <div class="texto-producto">
                     <h3>Producto 1</h3>
                     <div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem, explicabo cupiditate,
                             voluptates obcaecati, repellat facilis eaque fugit similique asperiores eum. Optio eligendi
                             nisi dignissimos architecto porro, totam alias non.</p>
-                        <p>$1,000.00</p>
+                        <p class="precio">$1,000.00</p>
 
-                        <button type="button">Agregar al Carrito</button>
+                        <a class= "btn" href="#">Agregar al Carrito</a>
                     </div> <!-- Info Producto -->
-                </div><!-- Producto -->
-            </div> <!-- Fin de listado de Productos -->
+                </div><!-- Texto Producto -->
+            </div> <!-- Producto -->
 
-            <div>
+            <div class="producto">
                 <img src="img/producto2.jpg" alt="Imagen Producto">
-                <div>
-                    <h3>Producto 2</h3>
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
                     <div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem, explicabo cupiditate,
                             voluptates obcaecati, repellat facilis eaque fugit similique asperiores eum. Optio eligendi
                             nisi dignissimos architecto porro, totam alias non.</p>
-                        <p>$1,000.00</p>
+                        <p class="precio">$1,000.00</p>
 
-                        <button type="button">Agregar al Carrito</button>
+                        <a class= "btn" href="#">Agregar al Carrito</a>
+                        
                     </div> <!-- Info Producto -->
-                </div><!-- Producto -->
-            </div> <!-- Fin de listado de Productos -->
+                </div><!-- Texto Producto -->
+            </div> <!-- Producto -->
 
-            <div>
+            <div class="producto">
                 <img src="img/producto3.jpg" alt="Imagen Producto">
-                <div>
-                    <h3>Producto 3</h3>
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
                     <div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem, explicabo cupiditate,
                             voluptates obcaecati, repellat facilis eaque fugit similique asperiores eum. Optio eligendi
                             nisi dignissimos architecto porro, totam alias non.</p>
-                        <p>$1,000.00</p>
+                        <p class="precio">$1,000.00</p>
 
-                        <button type="button">Agregar al Carrito</button>
+                        <a class= "btn" href="#">Agregar al Carrito</a>
                     </div> <!-- Info Producto -->
-                </div><!-- Producto -->
-            </div> <!-- Fin de listado de Productos -->
+                </div><!-- Texto Producto -->
+            </div> <!-- Producto -->
 
-            <div>
+            <div class="producto">
                 <img src="img/producto4.jpg" alt="Imagen Producto">
-                <div>
-                    <h3>Producto 4</h3>
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
                     <div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem, explicabo cupiditate,
                             voluptates obcaecati, repellat facilis eaque fugit similique asperiores eum. Optio eligendi
                             nisi dignissimos architecto porro, totam alias non.</p>
-                        <p>$1,000.00</p>
+                        <p class="precio">$1,000.00</p>
 
-                        <button type="button">Agregar al Carrito</button>
+                        <a class="btn" href="#">Agregar al Carrito</a>
                     </div> <!-- Info Producto -->
-                </div><!-- Producto -->
-            </div> <!-- Fin de listado de Productos -->
+                </div><!-- Texto Producto -->
+            </div> <!-- Producto -->
 
-            <div>
+            <div class="producto">
                 <img src="img/producto5.jpg" alt="Imagen Producto">
-                <div>
-                    <h3>Producto 5</h3>
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
                     <div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem, explicabo cupiditate,
                             voluptates obcaecati, repellat facilis eaque fugit similique asperiores eum. Optio eligendi
                             nisi dignissimos architecto porro, totam alias non.</p>
-                        <p>$1,000.00</p>
+                        <p class="precio">$1,000.00</p>
 
-                        <button type="button">Agregar al Carrito</button>
+                        <a class= "btn" href="#">Agregar al Carrito</a>
                     </div> <!-- Info Producto -->
-                </div><!-- Producto -->
-            </div> <!-- Fin de listado de Productos -->
+                </div><!-- Texto Producto -->
+            </div> <!-- Producto -->
 
-            <div>
+            <div class="producto">
                 <img src="img/producto6.jpg" alt="Imagen Producto">
-                <div>
-                    <h3>Producto 6</h3>
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
                     <div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem, explicabo cupiditate,
                             voluptates obcaecati, repellat facilis eaque fugit similique asperiores eum. Optio eligendi
                             nisi dignissimos architecto porro, totam alias non.</p>
-                        <p>$1,000.00</p>
+                        <p class="precio">$1,000.00</p>
 
-                        <button type="button">Agregar al Carrito</button>
+                        <a class= "btn" href="#">Agregar al Carrito</a>
                     </div> <!-- Info Producto -->
-                </div><!-- Producto -->
-            </div> <!-- Fin de listado de Productos -->
+                </div><!-- Texto Producto -->
+            </div> <!-- Producto -->
+        </div> <!--Fin listado producto  -->
 
-        </ul>
     </main>
 
 
@@ -195,6 +201,8 @@
         </div>
         <p>Todos los derechos Reservados, TiendaMuebles</p>
     </footer>
+
+
 
 
 
