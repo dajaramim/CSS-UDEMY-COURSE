@@ -141,21 +141,36 @@ img{
 /* Listado de productos */
 .contenido-principal{
 	padding-top: 5rem;
+	
 }
 .listado-productos {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	column-gap: 2rem;
 	row-gap: 2rem;
+	
 
 }
 .producto:nth-child(1){
 	grid-column: 1/ 7;
 	 /* grid-column-start 1;
 	    grid-column-end 7;*/
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	/* Al utilizar grid-template-columns creamos columnas, en este caso 2, la imagen que va a tomar 3 partes del tamaño horizontal y el texto sólo 1 parte*/
+}
+.producto:nth-child(1) img {
+	height: 43rem;
+	width: 100%;
+	object-fit: cover;
 }
 .producto:nth-child(2){
 	grid-column: 1 / 4;
+}
+.producto:nth-child(2) img,.producto:nth-child(3) img {
+	height: 30rem;
+	width: 100%;
+	object-fit: cover;
 }
 .producto:nth-child(3){
 	grid-column: 4 / 7;
@@ -188,3 +203,34 @@ img{
 	font-size: 2.8rem;
 	font-weight: 900;
 }
+/* Footer */
+
+.site-footer {
+	border-top: 1px solid #e1e1e1 /* ancho el tipo de borde y el color del borde*/;
+	margin-top: 5rem;
+	padding-top: 5rem;
+}
+.site-footer h3 {
+	margin-bottom: 1rem;
+}
+/* Con flexbox 
+.grid-footer {
+	display: flex;
+	gap: 2rem;
+}
+.grid-footer div {
+	flex: 1;  flex grow 
+*/
+.grid-footer{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 2rem;
+}
+.footer-menu a {
+	display: block;
+}
+.copyright{
+	margin-top: 5rem;
+	text-align: center;
+}
+
