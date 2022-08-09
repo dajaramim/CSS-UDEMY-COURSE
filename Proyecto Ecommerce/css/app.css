@@ -234,3 +234,22 @@ img{
 	text-align: center;
 }
 
+/* Nosotros */
+.contenido-nosotros {
+	display: grid;
+
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));/* mientras que el contenido no sea de 25rem o mayor asignale 1 fr */
+
+	column-gap: 4rem;
+}
+.informacion-nosotros {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.contenedor-blog{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 10rem;
+}
+
