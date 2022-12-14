@@ -1,0 +1,248 @@
+/* Globales */
+
+:root {
+    --blanco: #FFF;
+    --negro: #111111;
+    --gris: #343A40;
+
+    --fuentePrincipal: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* para que los rem valgan 10 px */
+    box-sizing: border-box;
+    /* Para que al usar padding no se agrande más del tamaño de la caja contenedora */
+}
+
+*,
+*:before,
+*:after {
+    /* para el box-sizing se herede */
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 1rem 0 4rem 0;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 5.8rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.btn {
+    color: var(--gris);
+    background-color: var(--blanco);
+    border: 1px solid var(--gris);
+    padding: .5rem 2rem;
+    transition: background-color .3s;
+}
+
+.btn:hover {
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
+.m-5 {
+    margin-top: 5rem;
+}
+
+/* Header */
+.header {
+    min-height: 60rem;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+}
+
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+    color: var(--blanco);
+}
+
+.nombre-sitio {
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    .nombre-sitio {
+        font-size: 5rem;
+    }
+}
+
+.nombre-sitio span {
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .contacto {
+        align-items: flex-end;
+    }
+}
+
+.telefono {
+    display: flex;
+    /* afecta a los hijos de .telefono que son el texto (01 800...) y el ::before que en este caso es la imágen */
+}
+
+.telefono::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 1rem;
+}
+
+.header a {
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+    }
+}
+
+.navegacion a {
+    padding: .5rem;
+    transition: background-color 300ms;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        padding: 1rem 2rem;
+
+    }
+}
+
+.navegacion a:hover {
+    background-color: rgb(255 255 255 / .5);
+    color: var(--negro);
+}
+.slogan {
+    text-align: center;
+}
+@media (min-width: 768px) { 
+    .slogan {
+        text-align: right;
+    }
+}
+
+.slogan h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+@media (min-width: 768px) { 
+    .slogan h1 {
+        font-size: 5rem;
+    }
+}
+
+.slogan p {
+    margin: 0;
+    line-height: 1 ;
+}
+
+
+/* Nosotros */
+
+.nosotros {
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+@media (min-width: 768px) { 
+    .nosotros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.contenido-nosotros {
+    background-color: var(--blanco);
+    padding: 5rem;
+}
+@media (min-width: 768px) { 
+    
+}
+
+.contenido-nosotros h1,
+.contenido-nosotros p {
+    margin-bottom: 1rem;
+}
