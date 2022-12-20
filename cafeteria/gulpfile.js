@@ -7,6 +7,7 @@ const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('cssnano');
 
 //IMAGENES
 const imagemin = require('gulp-imagemin');
@@ -22,7 +23,7 @@ function css( done ) {
     src('src/scss/app.scss') //paso 1
         .pipe( sourcemaps.init()) //inicializa sourcemap
         .pipe( sass( {outputStyle: 'expanded'}) ) // paso 2 
-        .pipe( postcss([autoprefixer()])) //tiene corchetes [] porque es un arreglo, se le pueden pasar varias funciones a postcss
+        .pipe( postcss([autoprefixer(), cssnano()])) //tiene corchetes [] porque es un arreglo, se le pueden pasar varias funciones a postcss
         .pipe( sourcemaps.write('.')) //indica donde se guardará sourcemap, en este caso en el mismo build/css
         .pipe( dest('build/css') ) //paso 3 build/css es el destino donde se guardará
 
